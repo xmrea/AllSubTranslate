@@ -39,7 +39,6 @@ while True:
                 folder = os.path.abspath(root)
                 file_to_remove = os.path.join(folder, name)
                 os.remove(file_to_remove)
-    print()
-    print("---------------------")
+    print("","\n","")
     os.system('pause')            
     break
