@@ -10,9 +10,9 @@ for root, dirs, files in os.walk("./put_files_here"):
             source_file = os.path.join(folder, name)
             dest_file = os.path.join(folder, f'{os.path.splitext(name)[0]}-tr.srt')
             if os.path.isfile(dest_file):
-                print(f'"{name}" translated before')
+                print(f'( {name} )  ᴛʀᴀɴsʟᴀᴛᴇᴅ ʙᴇғᴏʀᴇ!!')
             else:
-                print(f'translating "{name}"')
+                print(f' ᴛʀᴀɴsʟᴀᴛɪɴɢ...  ( {name} )')
                 file_must_update = False
                 with open(source_file, 'r', encoding="utf8") as srt_file:
                     srt_content = srt_file.read()
@@ -29,7 +29,7 @@ for root, dirs, files in os.walk("./put_files_here"):
                     with open(source_file, 'w', encoding="utf8") as srt_file_w:
                         srt_file_w.write(new_srt_content)
                 translate_and_compose(source_file, dest_file, 'auto', 'tr', mode='naive', both=False)
-                print(f'translated "{name}"')
+                print(f'   √ ᴛʀᴀɴsʟᴀᴛᴇᴅ  ( {name} ) \n')
                 time.sleep(3)
 
 while True:
