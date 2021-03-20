@@ -20,4 +20,4 @@ python subtitle_translator.py
 
 ### Note
 
-This script translates subtitles from Detect Language to Turkish.
+This script translates subtitles from Auto Detect Language to Turkish.
