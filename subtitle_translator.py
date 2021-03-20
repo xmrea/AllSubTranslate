@@ -28,7 +28,7 @@ for root, dirs, files in os.walk("./put_files_here"):
                     os.rename(source_file, source_file + ".backup")
                     with open(source_file, 'w', encoding="utf8") as srt_file_w:
                         srt_file_w.write(new_srt_content)
-                translate_and_compose(source_file, dest_file, 'en', 'tr', mode='naive', both=False)
+                translate_and_compose(source_file, dest_file, 'auto', 'tr', mode='naive', both=False)
                 print(f'translated "{name}"')
                 time.sleep(3)
 
@@ -39,4 +39,7 @@ while True:
                 folder = os.path.abspath(root)
                 file_to_remove = os.path.join(folder, name)
                 os.remove(file_to_remove)
+    print()
+    print("---------------------")
+    os.system('pause')            
     break
