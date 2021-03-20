@@ -2,8 +2,8 @@ import re
 try:
     import jieba
 except ImportError:
-    print('If your target language is Chinese, please install third party library "jieba"')
-    print()
+    print('ɪғ ʏᴏᴜʀ ᴛᴀʀɢᴇᴛ ʟᴀɴɢᴜᴀɢᴇ ɪs ᴄʜɪɴᴇsᴇ, ᴘʟᴇᴀsᴇ ɪɴsᴛᴀʟʟ ᴛʜɪʀᴅ ᴘᴀʀᴛʏ ʟɪʙʀᴀʀʏ "ᴊɪᴇʙᴀ"')
+    print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
     pass
 
 
