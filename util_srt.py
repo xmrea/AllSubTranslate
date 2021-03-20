@@ -3,6 +3,7 @@ try:
     import jieba
 except ImportError:
     print('If your target language is Chinese, please install third party library "jieba"')
+    print()
     pass
 
 
