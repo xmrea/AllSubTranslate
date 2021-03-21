@@ -10,7 +10,7 @@ for root, dirs, files in os.walk("./put_files_here"):
             source_file = os.path.join(folder, name)
             dest_file = os.path.join(folder, f'{os.path.splitext(name)[0]}-tr.srt')
             if os.path.isfile(dest_file):
-                print(f'( {name} )  ᴛʀᴀɴsʟᴀᴛᴇᴅ ʙᴇғᴏʀᴇ!!')
+                print(f'( {name} )  ᴛʀᴀɴsʟᴀᴛᴇᴅ ʙᴇғᴏʀᴇ!! \n')
             else:
                 print(f' ᴛʀᴀɴsʟᴀᴛɪɴɢ...  ( {name} )')
                 file_must_update = False
@@ -39,6 +39,6 @@ while True:
                 folder = os.path.abspath(root)
                 file_to_remove = os.path.join(folder, name)
                 os.remove(file_to_remove)
-    print("","\n","")
+    print()
     os.system('pause')            
     break
